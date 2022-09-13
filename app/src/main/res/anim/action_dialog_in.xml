@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+    android:fromYDelta="100%"
+    android:toYDelta="0" />
+
+<!--
+    android:duration  动画持续时间，单位毫秒
+    android:fromXDelta   从X轴何处来，数值为正则从屏幕右边来
+    android:toXDelta    从X轴何消失
+    android:fromYDelta 从Y轴何处来
+    android:toYDelta：从Y轴何消失
+
+-->

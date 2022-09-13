@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_round_square_light_gray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主题"
+        android:textAppearance="@style/title_9"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/main_padding_30"
+        android:layout_marginLeft="@dimen/main_padding_30"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/main_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_padding_20"
+        android:layout_marginRight="@dimen/main_padding_20">
+<!--        android:background="@drawable/bg_round_square_text"-->
+        <TextView
+            android:id="@+id/bt_style_1"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+            android:text="远山黛"
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"/>
+        <TextView
+            android:id="@+id/bt_style_2"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+            android:text="极夜蓝"
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+
+            android:textAppearance="@style/title_9"/>/>
+        <TextView
+            android:id="@+id/bt_style_3"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"
+            android:text="草色青" />
+        <TextView
+            android:id="@+id/bt_style_4"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"
+            android:text="卡通" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/main_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_padding_20"
+        android:layout_marginRight="@dimen/main_padding_20"
+        >
+        <TextView
+            android:id="@+id/bt_style_5"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+            android:text="马卡龙"
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+
+            android:textAppearance="@style/title_9"/>
+        <TextView
+            android:id="@+id/bt_style_6"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+            android:text="幻影黑"
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"/>/>
+        <TextView
+            android:id="@+id/bt_style_7"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"
+            android:text="就酱籽" />
+
+        <TextView
+            android:id="@+id/bt_style_8"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/main_padding_100"
+            android:layout_marginLeft="@dimen/main_padding_20"
+
+            android:gravity="center"
+            android:background="@drawable/bg_round_square_white"
+            android:textAppearance="@style/title_9"
+            android:text="标准" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textAppearance="@style/caption_8"
+        android:layout_marginTop="@dimen/main_padding_30"
+        android:layout_marginLeft="@dimen/main_padding_30"
+        android:text="地图显示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:id="@+id/ib_show_text"
+        android:layout_marginTop="@dimen/main_padding_20"
+        android:layout_marginLeft="@dimen/main_padding_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/charge_station_1dp"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/main_padding_10"
+        android:layout_marginLeft="@dimen/main_padding_30"
+        android:layout_marginBottom="@dimen/main_padding_10"
+        android:text="文字显示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>

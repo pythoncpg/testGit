@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mv_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_top_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginLeft="@dimen/main_padding_30"
+                android:layout_marginTop="@dimen/main_padding_20"
+                android:layout_marginRight="@dimen/main_padding_30"
+                android:background="@drawable/bg_round_square_white"
+                android:clipToOutline="true"
+                android:elevation="8dp"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rg_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_distance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_rb_distance"
+                        android:text="位置距离"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/selector_main_rb_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_charge_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_rb_charge_type"
+                        android:text="充电类型"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/selector_main_rb_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_rb_price"
+                        android:text="价格区间"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/selector_main_rb_text" />
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_change_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_top_filter"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="@dimen/main_padding_175"
+                android:layout_marginRight="@dimen/view_dimen_20"
+                android:backgroundTint="@color/white"
+                android:contentDescription="更改主题"
+                android:src="@drawable/change_theme_icon"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_show_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="@dimen/view_dimen_290"
+                android:layout_marginEnd="@dimen/main_padding_20"
+                android:backgroundTint="@color/white"
+                android:contentDescription="显示交通"
+                android:src="@drawable/transportation_icon"
+                app:fabSize="mini" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="@dimen/main_padding_30"
+                android:layout_marginRight="@dimen/main_padding_30"
+                android:layout_marginBottom="@dimen/main_padding_20"
+                android:clipToOutline="true"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_open_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="打开列表"
+                    android:src="@drawable/charge_list"
+                    app:fabSize="mini" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fab_open_list"
+                    android:background="@drawable/bg_round_square_white">
+
+                    <ImageView
+                        android:id="@+id/iv_bk"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/main_padding_30"
+                        android:layout_marginTop="@dimen/main_padding_30"
+                        android:layout_marginBottom="@dimen/main_padding_30"
+                        android:background="@drawable/bg_image_round"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/main_padding_30"
+                        android:layout_marginTop="@dimen/main_padding_30"
+                        android:layout_toRightOf="@id/iv_bk"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:singleLine="true"
+                        android:text="title"
+                        android:textAppearance="@style/title_9" />
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="@dimen/main_padding_30"
+                        android:layout_marginTop="@dimen/main_padding_30"
+                        android:layout_toRightOf="@id/iv_bk"
+                        android:gravity="top"
+                        android:text="323米"
+                        android:textAppearance="@style/caption_5"
+                        android:translationY="-0.72sp" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="@dimen/main_padding_40"
+                        android:layout_marginTop="@dimen/main_padding_30"
+                        android:layout_toRightOf="@+id/tv_distance"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:singleLine="true"
+                        android:text="QQ炫舞大厅"
+                        android:textAppearance="@style/caption_5"
+                        android:translationY="-0.72sp" />
+
+
+                    <TextView
+                        android:id="@+id/bt_navigation"
+                        android:layout_width="@dimen/view_dimen_150"
+                        android:layout_height="@dimen/view_dimen_90"
+                        android:layout_below="@+id/tv_address"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/main_padding_20"
+                        android:layout_marginRight="@dimen/main_padding_40"
+                        android:background="@drawable/bg_navigation_bt"
+                        android:gravity="center"
+                        android:text="导航"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/caption_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_address"
+                        android:layout_marginTop="@dimen/main_padding_42"
+                        android:layout_marginRight="@dimen/main_padding_70"
+                        android:layout_toLeftOf="@id/bt_navigation"
+                        android:gravity="top"
+                        android:text="起/度"
+                        android:textAppearance="@style/caption_5"
+                        android:translationY="-0.72sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_distance"
+                        android:layout_marginTop="@dimen/main_padding_30"
+                        android:layout_toLeftOf="@id/caption_7"
+                        android:gravity="center"
+                        android:text="0.9999元"
+                        android:textAppearance="@style/headline" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+            <!--                android:id="@+id/fab_move_current"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center|right"-->
+            <!--                android:backgroundTint="@color/white"-->
+            <!--                android:contentDescription="回到原位"-->
+            <!--                android:src="@drawable/transportation_icon"-->
+            <!--                app:fabSize="mini" />-->
+
+
+        </com.amap.api.maps.MapView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

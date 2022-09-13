@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_border_top"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_distance"
+            android:text="位置距离"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_main_rb_text" />
+
+        <RadioButton
+            android:id="@+id/rb_charge_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_charge_type"
+            android:text="充电类型"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_main_rb_text" />
+
+        <RadioButton
+            android:id="@+id/rb_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_price"
+            android:text="价格区间"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_main_rb_text" />
+
+    </RadioGroup>
+
+</LinearLayout>

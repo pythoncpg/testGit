@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="extraInfo">停车费用：前两小时免费、小型车0.5元/15分钟、大型车1元/15分钟（以现场实际收费为准），充电完成及时挪车，超时收取占位费。</string>
+    <string name="extraInfo2">请以服务商实际信息和服务范围为准</string>
+    <string name="caption_2">前两小时免费</string>
+
+    <string name="filter1">位置距离</string>
+    <string name="filter2">充电类型</string>
+    <string name="filter3">价格区间</string>
+    <string name="loadMore">正在加载...</string>
+    <string name="noMore">再怎么刷新也没有了QAQ</string>
+</resources>

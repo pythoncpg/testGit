@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/frame_5243"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/main_padding_20"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_list_square"
+        android:clipToOutline="true"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/iv_list_bk"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/b" />
+
+        <TextView
+            android:id="@+id/tv_list_name"
+            android:layout_width="237dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="start"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="星星小米科技园昌平充电汽车站..."
+            android:textAppearance="@style/title_9" />
+
+        <TextView
+            android:id="@+id/tv_list_distance"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="36dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="329米"
+            android:textAppearance="@style/caption_5"
+            android:translationY="-0.72sp" />
+
+        <TextView
+            android:id="@+id/tv_list_address"
+            android:layout_width="126dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="154dp"
+            android:layout_marginTop="36dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="海淀区玄武大街25号"
+            android:textAppearance="@style/caption_5"
+            android:translationY="-0.72sp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/frame_5244"
+            android:layout_width="40dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/bg_gray">
+
+            <TextView
+                android:id="@+id/tv_list_business_hours"
+                android:layout_width="32dp"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:gravity="top"
+                android:lineSpacingExtra="-1sp"
+                android:text="24小时"
+                android:textAppearance="@style/caption_10" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/frame_5246"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/bg_speed_fast_in_list">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/frame_5247"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_speed_fast_circle"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:id="@+id/caption_11"
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-1sp"
+                    android:text="快"
+                    android:textAppearance="@style/caption_11" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_list_fastStation_free"
+                android:layout_width="27dp"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:gravity="top"
+                android:lineSpacingExtra="-1sp"
+                android:text="空0/2"
+                android:textAppearance="@style/caption_10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/bg_speed_slow_in_list"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_speed_slow_circle"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-1sp"
+                    android:text="慢"
+                    android:textAppearance="@style/caption_11" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_list_slowStation_free"
+                android:layout_width="27dp"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:gravity="top"
+                android:lineSpacingExtra="-1sp"
+                android:text="空0/2"
+                android:textAlignment="center"
+                android:textAppearance="@style/caption_10"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="332.5dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_list_distance"
+            android:layout_centerHorizontal="true"
+
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_list_price"
+            android:layout_width="87dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="109dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:text="0.9880元"
+            android:textAppearance="@style/headline" />
+
+        <TextView
+            android:id="@+id/caption_7"
+            android:layout_width="33dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="113dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="起/度"
+            android:textAppearance="@style/caption_5"
+            android:translationY="-0.72sp" />
+
+
+        <TextView
+            android:id="@+id/vector"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="169dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_stop_car"
+            android:gravity="center"
+            android:text="P"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_list_extraInfo"
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="12dp"
+            android:ellipsize="start"
+            android:gravity="top"
+            android:lineSpacingExtra="-4sp"
+            android:text="@string/caption_2"
+            android:textAppearance="@style/caption_2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
